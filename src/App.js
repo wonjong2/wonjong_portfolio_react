@@ -1,5 +1,12 @@
 import React from 'react';
+import Header from './components/Header';
+import Section from './components/Section';
+import Footer from './components/Footer';
 
 export default function App() {
-    return <h1>This is my portfolio implemented by React</h1>
+    return (
+        <Header />,
+        <Section />,
+        <Footer />
+    );
 };
