@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Section from './components/Section';
 import Footer from './components/Footer';
 
 export default function App() {
+    const [index, setIndex] = useState(0);
+
+    const handleClickMenu = (e) => {
+        e.preventDefault();
+        setIndex(e.target.id);
+    }
+
     return (
-        <Header />,
-        <Section />,
-        <Footer />
+        <div>
+            <Header
+                selectedMenu={index}
+                eventListener={handleClickMenu}
+            />
+            <Section
+                selectedMenu={index}
+            />
+            <Footer />
+        </div>
     );
 };

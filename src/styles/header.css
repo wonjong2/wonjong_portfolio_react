@@ -1,0 +1,43 @@
+h1 {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: inline-block;
+    color: black;
+}
+
+.container-fluid > h1 {
+    margin: 1rem 0;
+    padding: 5px 20px 5px 7%;
+    border: 5px var(--light-color) solid;
+    background-color: var(--light-color);
+}
+
+.custom-navbar {
+    padding-right: 3rem;
+    font-size: 1.6rem;
+    background-color: var(--dark-color);
+}
+
+.navbar-dark {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.nav-link {
+    transition: transform, text-shadow 0.3s;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color: white;
+    transform: translate(-1px, -1px);
+}
+
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white;
+}

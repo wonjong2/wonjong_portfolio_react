@@ -1,0 +1,11 @@
+:root {
+    --light-color: rgba(242, 182, 4, 1);
+    --dark-color: rgba(140, 79, 57, 1);
+    --gitHub-text-color: rgba(2, 62, 114, 1);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 280px;
+    width: 100%;
+}

@@ -1,0 +1,96 @@
+/* Style for Work */
+.work-detail {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-title {
+    display: flex;
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    border: 5px var(--light-color) solid;
+    background-color: var(--light-color);
+    margin-bottom: 1rem;
+    padding: 0 0.62rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.work-text {
+    width: 100%;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.works {
+    width: 48%;
+    height: 9.37rem;
+    border: 5px var(--light-color) solid;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-decoration: none;
+    color: black;
+    margin-top: 0.62rem;
+    transition: transform, opacity 1s;
+}
+
+.works:hover {
+    border-color: var(--dark-color);
+    opacity: 1.0;
+    box-shadow: 10px 5px 10px rgb(75, 74, 74);
+    transform: translate(-5px, -5px);
+    z-index: 999;
+}
+
+p.work-text {
+    color: var(--gitHub-text-color);
+    font-style: italic;
+}
+
+p.work-text:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Set images of my works*/
+.first-work {
+    /* width: 100%;
+    height: 12.5rem; */
+    background-image: url("../images/bens_diner.png");
+    /* background-size: cover; */
+    opacity: 0.7;
+    /* margin-top: 0px; */
+}
+
+.second-work{
+    background-image: url("../images/world_travel_dictionary.png");
+    opacity: 0.7;
+}
+
+.third-work{
+    background-image: url("../images/tech_blog_mvc.png");
+    opacity: 0.7;
+}
+
+.fourth-work{
+    background-image: url("../images/weather_dashboard.png");
+    opacity: 0.7;
+}
+
+.fifth-work{
+    background-image: url("../images/day_scheduler.png");
+    opacity: 0.7;
+}
+
+@media only screen and (max-width:1000px) {
+    .works{
+        width: 100%;
+    }
+}
