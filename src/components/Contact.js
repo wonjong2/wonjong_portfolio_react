@@ -6,10 +6,12 @@ const styles = {
         width: '50%',
         minWidth: '300px'
     },
+    display: {
+        display: 'block'
+    },
     notDisplay: {
         display: 'none'
     }
-
 };
 
 export default function Contact() {
@@ -76,8 +78,8 @@ export default function Contact() {
                         <label className='form-label'>Message:</label>
                         <textarea className='form-control' value={message} id='message' name='message' type='text' onChange={handlingInputChange} onFocus={handlingOnFocus} onBlur={handlingOnBlur}></textarea>
                     </div>
-                    <p className='mb-3' style={errEmail.length ? { display: 'block' } : styles.notDisplay}>{errEmail}</p>
-                    <p className='mb-3' style={errMessage.length ? { display: 'block' } : styles.notDisplay}>{errMessage}</p>
+                    <p className='mb-3' style={errEmail.length ? styles.display : styles.notDisplay}>{errEmail}</p>
+                    <p className='mb-3' style={errMessage.length ? styles.display : styles.notDisplay}>{errMessage}</p>
                     <div>
                         <button type='button' className='btn btn-secondary' onClick={handlingSubmit}>Submit</button>
                     </div>
