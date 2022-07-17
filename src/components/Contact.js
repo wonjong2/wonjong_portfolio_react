@@ -55,6 +55,10 @@ export default function Contact() {
 
     const handlingSubmit = (e) => {
         e.preventDefault();
+        if (!validateEmail(email) || !message.length) {
+            alert(`Please enter valid inputs`);
+            return;
+        }
         alert(`Hello ${name}`);
         setName('');
         setEmail('');
