@@ -1,6 +1,7 @@
 import React from 'react';
 import Frontend from './Frontend';
 import Backend from './Backend';
+import Miscellaneous from './Miscellaneous';
 import resume from '../documents/Wonjong_Park_Resume.pdf'
 
 export default function Resume() {
@@ -14,6 +15,7 @@ export default function Resume() {
             </div>
             <Frontend />
             <Backend />
+            <Miscellaneous />
         </div>
     )
 }
