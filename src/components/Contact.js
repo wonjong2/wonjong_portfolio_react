@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { validateEmail } from '../util/helpers';
 
 const styles = {
     width: {
         width: '50%',
         minWidth: '300px'
+    },
+    notDisplay: {
+        display: 'none'
     }
+
 };
 
 export default function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [error, setError] = useState({ email: '', message: '' });
+    const [errEmail, setErrEmail] = useState('');
+    const [errMessage, setErrMessage] = useState('');
 
     const handlingInputChange = (e) => {
         if (e.target.id === 'name') {
@@ -26,16 +31,23 @@ export default function Contact() {
         }
     }
 
-    const handlingOutFocus = (e) => {
-        let updatedErr = error;
-
+    const handlingOnBlur = (e) => {
         if (e.target.id === 'email') {
-            updatedErr.email = validateEmail(e.target.value) ? '' : 'Your email is invalid';
-            setError(updatedErr);
+            const updatedErr = validateEmail(e.target.value) ? '' : 'Your email is invalid';
+            setErrEmail(updatedErr);
         }
         else if (e.target.id === 'message') {
-            updatedErr.message = e.target.value.length ? '' : 'Message is required';
-            setError(updatedErr);
+            const updatedErr = e.target.value.length ? '' : 'Message is required';
+            setErrMessage(updatedErr);
+        }
+    };
+
+    const handlingOnFocus = (e) => {
+        if (e.target.id === 'email') {
+            setErrEmail('');
+        }
+        else if (e.target.id === 'message') {
+            setErrMessage('');
         }
     };
 
@@ -53,24 +65,24 @@ export default function Contact() {
             <div className='input-group pt-3'>
                 <form className='form' style={styles.width}>
                     <div className='mb-3'>
-                        <label className='form-label' for='name'>Name:</label>
+                        <label className='form-label'>Name:</label>
                         <input className='form-control' value={name} id='name' name='name' type='text' onChange={handlingInputChange}></input>
                     </div>
                     <div className='mb-3'>
-                        <label className='form-label' for='email'>Email address:</label>
-                        <input className='form-control' value={email} id='email' name='email' type='email' onChange={handlingInputChange} onFocus={handlingOutFocus} onBlur={handlingOutFocus}></input>
+                        <label className='form-label'>Email address:</label>
+                        <input className='form-control' value={email} id='email' name='email' type='email' onChange={handlingInputChange} onFocus={handlingOnFocus} onBlur={handlingOnBlur}></input>
                     </div>
                     <div className='mb-3'>
-                        <label className='form-label' for='message'>Message:</label>
-                        <textarea className='form-control' value={message} id='message' name='message' type='text' onChange={handlingInputChange} onFocus={handlingOutFocus} onBlur={handlingOutFocus}></textarea>
+                        <label className='form-label'>Message:</label>
+                        <textarea className='form-control' value={message} id='message' name='message' type='text' onChange={handlingInputChange} onFocus={handlingOnFocus} onBlur={handlingOnBlur}></textarea>
                     </div>
-                    {error.email.length > 0 && <p className='mb-3'>{error.email}</p>}
-                    {error.message.length > 0 && <p className='mb-3'>{error.message}</p>}
+                    <p className='mb-3' style={errEmail.length ? { display: 'block' } : styles.notDisplay}>{errEmail}</p>
+                    <p className='mb-3' style={errMessage.length ? { display: 'block' } : styles.notDisplay}>{errMessage}</p>
                     <div>
                         <button type='button' className='btn btn-secondary' onClick={handlingSubmit}>Submit</button>
                     </div>
                 </form>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
