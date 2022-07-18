@@ -16,6 +16,7 @@ export default function Header(props) {
                     />
                 </div>
             </nav>
+            <div className="background"></div>
         </header>
     );
 };

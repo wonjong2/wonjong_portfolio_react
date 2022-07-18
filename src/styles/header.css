@@ -17,7 +17,8 @@ h1 {
     padding-right: 3rem;
     font-size: 1.6rem;
     background-image: url("../images/header_bg.jpg")
-    /* background-color: var(--dark-color); */
+    /* background-color: white;*/
+    /* opacity: 100%;  */
 }
 
 .navbar-dark {
