@@ -7,7 +7,7 @@ h1 {
 }
 
 .container-fluid > h1 {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     padding: 5px 20px 5px 7%;
     border: 5px var(--light-color) solid;
     background-color: var(--light-color);
@@ -16,7 +16,8 @@ h1 {
 .custom-navbar {
     padding-right: 3rem;
     font-size: 1.6rem;
-    background-color: var(--dark-color);
+    background-image: url("../images/header_bg.jpg")
+    /* background-color: var(--dark-color); */
 }
 
 .navbar-dark {
