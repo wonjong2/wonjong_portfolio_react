@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.47842021.css",
+    "main.js": "/static/js/main.038924ee.js",
+    "static/media/world_travel_dictionary.png": "/static/media/world_travel_dictionary.3e8a739501edc0ca6acf.png",
+    "static/media/bens_diner.png": "/static/media/bens_diner.49b4fb28f18dad2f6127.png",
+    "static/media/Wonjong_Park_Resume.pdf": "/static/media/Wonjong_Park_Resume.57c263fc6dbee33967ba.pdf",
+    "static/media/weather_dashboard.png": "/static/media/weather_dashboard.d361bdd9da429583c8f1.png",
+    "static/media/wonjong.jpg": "/static/media/wonjong.b2bc142463e180c3697d.jpg",
+    "static/media/day_scheduler.png": "/static/media/day_scheduler.5e4bb6a2d7b8aea9016d.png",
+    "static/media/tech_blog_mvc.png": "/static/media/tech_blog_mvc.88664aa11feb01a8c280.png",
+    "index.html": "/index.html",
+    "main.47842021.css.map": "/static/css/main.47842021.css.map",
+    "main.038924ee.js.map": "/static/js/main.038924ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47842021.css",
+    "static/js/main.038924ee.js"
+  ]
+}
