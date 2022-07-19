@@ -6,8 +6,8 @@ const styles = {
     },
     selected: {
         fontFamily: `'Aladin', cursive`,
-        color: 'black',
-        backgroundColor: 'var(--light-color)'
+        fontWeight: 'bold',
+        color: 'yellow',
     },
     unselected: {
         fontFamily: `'Aladin', cursive`,
@@ -28,19 +28,19 @@ export default function Navbar(props) {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul className="navbar-nav">
+                <ul className="navbar-nav mt-2">
                     {navMenus.map((menu, i) => (
                         (props.selectedMenu == i) ? (
                             <li className='nav-item' key={i}>
-                                <a className='nav-link' style={styles.selected} id={i} onClick={props.eventListener}>
+                                <span className='nav-link' style={styles.selected} id={i} onClick={props.eventListener}>
                                     {menu}
-                                </a>
+                                </span>
                             </li>
                         ) : (
                             <li className='nav-item' key={i}>
-                                <a className='nav-link' style={styles.unselected} id={i} onClick={props.eventListener}>
+                                <span className='nav-link' style={styles.unselected} id={i} onClick={props.eventListener}>
                                     {menu}
-                                </a>
+                                </span>
                             </li>
                         )
 
