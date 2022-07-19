@@ -16,7 +16,6 @@ const styles = {
         fontSize: '1.2rem',
         color: 'white'
     }
-
 };
 
 export default function Contact() {

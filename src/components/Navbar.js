@@ -5,10 +5,12 @@ const styles = {
         textAlign: 'right',
     },
     selected: {
+        fontFamily: `'Aladin', cursive`,
         color: 'black',
         backgroundColor: 'var(--light-color)'
     },
     unselected: {
+        fontFamily: `'Aladin', cursive`,
         color: 'white'
     }
 }
@@ -43,9 +45,6 @@ export default function Navbar(props) {
                         )
 
                     ))}
-                    {/* <li className="nav-item">
-                        <a className="nav-link" href="./assets/documents/Wonjong_Park_Resume.pdf">Resume</a>
-                    </li> */}
                 </ul>
             </div>
         </div>
