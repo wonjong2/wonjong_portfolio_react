@@ -5,33 +5,33 @@ export default function Portfolio() {
     const projects = [
         {
             url: 'https://bens-diner.herokuapp.com/',
+            github: 'https://github.com/wonjong2/Bens_Diner',
             title: `Ben's Diner`,
             class: 'works first-work',
-            id: 'first-project'
         },
         {
             url: 'https://levisgaragegroupinc.github.io/translation_app/',
+            github: 'https://github.com/levisgaragegroupinc/translation_app',
             title: 'Tranlation App',
             class: 'works second-work',
-            id: 'second-project'
         },
         {
             url: 'https://tech-blog-wonjong.herokuapp.com/',
+            github: 'https://github.com/wonjong2/Tech_Blog_MVC',
             title: 'Tech Blog MVC',
             class: 'works third-work',
-            id: 'third-project'
         },
         {
             url: 'https://wonjong2.github.io/Week6_Weather_Dashboard/',
+            github: 'https://github.com/wonjong2/Week6_Weather_Dashboard',
             title: 'Weather Dashboard',
             class: 'works fourth-work',
-            id: 'fourth-project'
         },
         {
             url: 'https://wonjong2.github.io/Week5_Work_Day_Scheduler/',
+            github: 'https://github.com/wonjong2/Week5_Work_Day_Scheduler',
             title: 'Workday Scheduler',
             class: 'works fifth-work',
-            id: 'fifth-project'
         }
     ];
 
@@ -44,8 +44,8 @@ export default function Portfolio() {
                         className={project.class} rel='noreferrer' key={i}>
                         <div className='work-title'>
                             <h4 className='work-text'>{project.title}</h4>
-                            <p className='work-text' id={projects.id}>[Go To GitHub <i className='fa-brands fa-github'></i>]
-                            </p>
+                            <a className='work-text' href={project.github} target='_blank' rel='noreferrer'>[Go To GitHub <i className='fa-brands fa-github'></i>]
+                            </a>
                         </div>
                     </a>
                 ))}

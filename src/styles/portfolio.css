@@ -56,7 +56,7 @@
     font-style: italic;
 }
 
-p.work-text:hover {
+a.work-text:hover {
     color: white;
     background-color: black;
 }
