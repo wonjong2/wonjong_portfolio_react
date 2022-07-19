@@ -11,7 +11,12 @@ const styles = {
     },
     notDisplay: {
         display: 'none'
+    },
+    label: {
+        fontSize: '1.2rem',
+        color: 'white'
     }
+
 };
 
 export default function Contact() {
@@ -71,15 +76,15 @@ export default function Contact() {
             <div className='input-group pt-3'>
                 <form className='form' style={styles.width}>
                     <div className='mb-3'>
-                        <label className='form-label'>Name:</label>
+                        <label className='form-label' style={styles.label}>Name:</label>
                         <input className='form-control' value={name} id='name' name='name' type='text' onChange={handlingInputChange}></input>
                     </div>
                     <div className='mb-3'>
-                        <label className='form-label'>Email address:</label>
+                        <label className='form-label' style={styles.label}>Email address:</label>
                         <input className='form-control' value={email} id='email' name='email' type='email' onChange={handlingInputChange} onFocus={handlingOnFocus} onBlur={handlingOnBlur}></input>
                     </div>
                     <div className='mb-3'>
-                        <label className='form-label'>Message:</label>
+                        <label className='form-label' style={styles.label}>Message:</label>
                         <textarea className='form-control' value={message} id='message' name='message' type='text' onChange={handlingInputChange} onFocus={handlingOnFocus} onBlur={handlingOnBlur}></textarea>
                     </div>
                     <p className='mb-3' style={errEmail.length ? styles.display : styles.notDisplay}>{errEmail}</p>
