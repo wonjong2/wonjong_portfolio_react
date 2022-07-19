@@ -37,18 +37,23 @@ export default function Contact() {
         }
     }
 
+    // Event handler for OnBlur event
     const handlingOnBlur = (e) => {
+        // Validate the entered email address and then set 'errEmail'
         if (e.target.id === 'email') {
             const updatedErr = validateEmail(e.target.value) ? '' : 'Your email is invalid';
             setErrEmail(updatedErr);
         }
+        // Chaeck if a user entered something to the message input and then set 'errMessage'
         else if (e.target.id === 'message') {
             const updatedErr = e.target.value.length ? '' : 'Message is required';
             setErrMessage(updatedErr);
         }
     };
 
+    // Event handler for OnFocus event
     const handlingOnFocus = (e) => {
+        // Reset variable belongs to the current focused input element to ''
         if (e.target.id === 'email') {
             setErrEmail('');
         }
@@ -57,13 +62,16 @@ export default function Contact() {
         }
     };
 
+    // Event handler for Submit event
     const handlingSubmit = (e) => {
         e.preventDefault();
+        // Check if the entered email address and message values are valid
         if (!validateEmail(email) || !message.length) {
             alert(`Please enter valid inputs`);
             return;
         }
         alert(`Hello ${name}`);
+        // Reset state variables
         setName('');
         setEmail('');
         setMessage('');
@@ -86,6 +94,7 @@ export default function Contact() {
                         <label className='form-label' style={styles.label}>Message:</label>
                         <textarea className='form-control' value={message} id='message' name='message' type='text' onChange={handlingInputChange} onFocus={handlingOnFocus} onBlur={handlingOnBlur}></textarea>
                     </div>
+                    {/* If there are any error messages, display them here  */}
                     <p className='mb-3' style={errEmail.length ? styles.display : styles.notDisplay}>{errEmail}</p>
                     <p className='mb-3' style={errMessage.length ? styles.display : styles.notDisplay}>{errMessage}</p>
                     <div>

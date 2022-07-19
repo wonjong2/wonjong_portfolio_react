@@ -24,6 +24,7 @@ export default function Section({ selectedMenu }) {
         <section className="container-fluid">
             <div className="column">
                 <div className="col-10 pt-4 mx-auto">
+                    {/* Decide which section to render */}
                     {renderSection(selectedMenu)}
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Frontend() {
+    // List of front-end related techs
     const frontEndTech = [
         'HTML',
         'CSS',

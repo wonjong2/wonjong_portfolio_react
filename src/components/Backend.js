@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Backend() {
+    // List of back-end related techs
     const backEndTech = [
         'APIs',
         'Node',

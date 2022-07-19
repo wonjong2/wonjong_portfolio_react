@@ -30,6 +30,7 @@ export default function Navbar(props) {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav mt-2">
                     {navMenus.map((menu, i) => (
+                        // Apply different style for the hightlight menu
                         (props.selectedMenu == i) ? (
                             <li className='nav-item' key={i}>
                                 <span className='nav-link' style={styles.selected} id={i} onClick={props.eventListener}>

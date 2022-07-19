@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function Miscellaneous() {
+    // List of other techs
     const MiscTech = [
         'Git',
         'Perforce',

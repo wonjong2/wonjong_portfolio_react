@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 export default function App() {
     const [index, setIndex] = useState(0);
 
+    // Evend handler for clicking nav menus
     const handleClickMenu = (e) => {
         e.preventDefault();
         setIndex(e.target.id);
