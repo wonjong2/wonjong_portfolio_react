@@ -16,22 +16,28 @@ export default function Portfolio() {
             class: 'works second-work',
         },
         {
+            url: 'https://texteditor-pwa-wonjong.herokuapp.com/',
+            github: 'https://github.com/wonjong2/PWA_Text_Editor',
+            title: 'PWA Text Editor',
+            class: 'works third-work',
+        },
+        {
             url: 'https://tech-blog-wonjong.herokuapp.com/',
             github: 'https://github.com/wonjong2/Tech_Blog_MVC',
             title: 'Tech Blog MVC',
-            class: 'works third-work',
+            class: 'works fourth-work',
         },
         {
             url: 'https://wonjong2.github.io/Week6_Weather_Dashboard/',
             github: 'https://github.com/wonjong2/Week6_Weather_Dashboard',
             title: 'Weather Dashboard',
-            class: 'works fourth-work',
+            class: 'works fifth-work',
         },
         {
             url: 'https://wonjong2.github.io/Week5_Work_Day_Scheduler/',
             github: 'https://github.com/wonjong2/Week5_Work_Day_Scheduler',
             title: 'Workday Scheduler',
-            class: 'works fifth-work',
+            class: 'works sixth-work',
         }
     ];
 

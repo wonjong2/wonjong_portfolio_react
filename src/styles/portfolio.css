@@ -73,16 +73,21 @@ a.work-text:hover {
 }
 
 .third-work{
-    background-image: url("../images/tech_blog_mvc.png");
+    background-image: url("../images/pwa_text_editor.png");
     opacity: 0.7;
 }
 
 .fourth-work{
-    background-image: url("../images/weather_dashboard.png");
+    background-image: url("../images/tech_blog_mvc.png");
     opacity: 0.7;
 }
 
 .fifth-work{
+    background-image: url("../images/weather_dashboard.png");
+    opacity: 0.7;
+}
+
+.sixth-work{
     background-image: url("../images/day_scheduler.png");
     opacity: 0.7;
 }
