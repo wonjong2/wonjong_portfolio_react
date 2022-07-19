@@ -89,7 +89,7 @@ export default function Contact() {
                     <p className='mb-3' style={errEmail.length ? styles.display : styles.notDisplay}>{errEmail}</p>
                     <p className='mb-3' style={errMessage.length ? styles.display : styles.notDisplay}>{errMessage}</p>
                     <div>
-                        <button type='button' className='btn btn-secondary' onClick={handlingSubmit}>Submit</button>
+                        <button type='button' className='btn btn-primary' onClick={handlingSubmit}>Submit</button>
                     </div>
                 </form>
             </div >
