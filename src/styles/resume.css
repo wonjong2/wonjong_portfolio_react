@@ -1,0 +1,18 @@
+.subtitle {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.subtitle>a {
+    font-size: 1.3rem;
+    color: white;
+    transition: transform, 0.3s;
+}
+
+.subtitle>a:hover {
+    color: lightgray;
+}
+
+.items {
+    color: white;
+}

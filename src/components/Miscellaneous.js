@@ -11,9 +11,9 @@ export default function Miscellaneous() {
     ];
 
     return (
-        <div>
-            <p> Miscellaneous Proficiencies</p>
-            <ul>
+        <div className='pt-3'>
+            <p className='subtitle'> Miscellaneous Proficiencies</p>
+            <ul className='items'>
                 {MiscTech.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
         </div>

@@ -12,9 +12,9 @@ export default function Frontend() {
     ];
 
     return (
-        <div>
-            <p>Front-end Proficiencies</p>
-            <ul>
+        <div className='pt-3'>
+            <p className='subtitle'>Front-end Proficiencies</p>
+            <ul className='items'>
                 {frontEndTech.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
         </div>

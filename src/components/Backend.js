@@ -11,9 +11,9 @@ export default function Backend() {
     ];
 
     return (
-        <div>
-            <p>Back-end Proficiencies</p>
-            <ul>
+        <div className='pt-3'>
+            <p className='subtitle'>Back-end Proficiencies</p>
+            <ul className='items'>
                 {backEndTech.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
         </div>
