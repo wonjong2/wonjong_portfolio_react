@@ -10,6 +10,9 @@ export default function Frontend() {
         'React',
         'Bootstrap',
         'Handlebars',
+        'Webpack',
+        'PWA(Progressive Web Apps)',
+        'IndexedDB'
     ];
 
     return (
