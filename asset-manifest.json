@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wonjong_portfolio_react/static/css/main.1bedfe18.css",
-    "main.js": "/wonjong_portfolio_react/static/js/main.f456a023.js",
+    "main.js": "/wonjong_portfolio_react/static/js/main.67e3dec5.js",
     "static/media/world_travel_dictionary.png": "/wonjong_portfolio_react/static/media/world_travel_dictionary.3e8a739501edc0ca6acf.png",
     "static/media/header_bg.jpg": "/wonjong_portfolio_react/static/media/header_bg.2acd254e7b75fe3a5b26.jpg",
     "static/media/bens_diner.png": "/wonjong_portfolio_react/static/media/bens_diner.49b4fb28f18dad2f6127.png",
@@ -13,10 +13,10 @@
     "static/media/tech_blog_mvc.png": "/wonjong_portfolio_react/static/media/tech_blog_mvc.88664aa11feb01a8c280.png",
     "index.html": "/wonjong_portfolio_react/index.html",
     "main.1bedfe18.css.map": "/wonjong_portfolio_react/static/css/main.1bedfe18.css.map",
-    "main.f456a023.js.map": "/wonjong_portfolio_react/static/js/main.f456a023.js.map"
+    "main.67e3dec5.js.map": "/wonjong_portfolio_react/static/js/main.67e3dec5.js.map"
   },
   "entrypoints": [
     "static/css/main.1bedfe18.css",
-    "static/js/main.f456a023.js"
+    "static/js/main.67e3dec5.js"
   ]
 }
