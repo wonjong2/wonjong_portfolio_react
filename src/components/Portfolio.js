@@ -10,9 +10,9 @@ export default function Portfolio() {
             class: 'works first-work',
         },
         {
-            url: 'https://levisgaragegroupinc.github.io/translation_app/',
-            github: 'https://github.com/levisgaragegroupinc/translation_app',
-            title: 'Tranlation App',
+            url: 'https://driveway-myway.herokuapp.com/',
+            github: 'https://github.com/wonjong2/Driveway-Myway',
+            title: 'Driveway Myway',
             class: 'works second-work',
         },
         {
