@@ -17,7 +17,7 @@ export default function Aboutme() {
             {/* My photo */}
             <img src={myPhoto} alt="wonjong" className="myphoto pt-3"></img>
             {/* Short bio */}
-            <p className='pt-3' style={styles.bio}>Experienced software engineer with extensive experience in the mobile
+            <p className='pt-3' style={styles.bio}>Experienced software engineer who loves solving problems and learning new technologies, with extensive experience in the mobile
                 telecommunication industry. From a software engineer who developed Protocol, UI and Network
                 features in many feature phones to a project manager who handles entire mobile product lifecycle
                 in various mobile devices, resulted in mobile products launched in markets on time with high

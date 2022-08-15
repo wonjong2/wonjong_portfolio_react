@@ -67,6 +67,12 @@ On the command prompt :
 -   `Deployed URL : `
     https://wonjong2.github.io/wonjong_portfolio_react/
 
+    ![aboutme](./images/aboutme.png)
+
+    ![portfolio](./images/portfolio.png)
+
+    ![resume](./images/resume.png)
+
 ## License
 
 Copyright (c) 2022 `wonjong2` (GitHub Username) Licensed under [the MIT License](https://choosealicense.com/licenses/mit/).
