@@ -5,6 +5,7 @@ export default function Miscellaneous() {
     const MiscTech = [
         'Git',
         'Perforce',
+        'Jenkins',
         'C language',
     ];
 

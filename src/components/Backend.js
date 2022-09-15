@@ -8,6 +8,7 @@ export default function Backend() {
         'Express',
         'MySQL, Sequelize',
         'MongoDB, Mongoose',
+        'GraphQL',
         'REST',
     ];
 
